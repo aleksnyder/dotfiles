@@ -1,0 +1,10 @@
+{
+  "editor.renderIndentGuides": false,
+  "editor.wordWrap": "wordWrapColumn",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.tabSize": 2,
+  "http.proxyAuthorization": null
+}
