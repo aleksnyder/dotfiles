@@ -104,11 +104,26 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Bash aliases
-alias start-grav="sudo service nginx start && sudo service php7.4-fpm start && php-fpm"
-alias start-local="sudo service nginx start"
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# exa alias
+if [ -x "$(command -v exa)" ]; then
+    alias ls="exa"
+    alias la="exa --long --all --group"
+fi
 
 # Aliases
 alias gaa="git add ."
 alias gcm="git commit -m"
 alias gpm="git push origin main"
+alias gs="git status --short"
+alias gc="git commit"
+alias gi="git init"
+alias gcl="git clone"
+alias ga="git add"
+alias gap="git add --patch"
+alias gd="git diff"
+alias gr="git restore"
+alias gp="git push"
+alias gu="git pull"
